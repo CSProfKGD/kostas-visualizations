@@ -240,9 +240,18 @@ a:focus-visible {
   background: #0a0a0a;
 }
 
+:root:not([data-theme="dark"]) .image-link {
+  background: var(--surface-solid);
+}
+
 .image-link picture {
   position: absolute;
-  inset: -1.4% -2.1% 0;
+  inset: -3%;
+}
+
+.visualization-card:is([data-slug="sphere-to-cubemap"], [data-slug="sphere-to-erp"]) .image-link picture {
+  inset: -1.2%;
+  transform: scaleY(1.035);
 }
 
 .teaser-image {
@@ -277,6 +286,10 @@ a:focus-visible {
 .visualization-card[data-slug="local-minimum"] .teaser-image {
   object-position: 50% 80%;
   transform: scale(1.105);
+}
+
+.visualization-card[data-slug="stereo-rectification"] .teaser-image {
+  filter: brightness(0.82) contrast(1.14);
 }
 
 .visualization-card[data-slug="local-minimum"]:hover .teaser-image {
