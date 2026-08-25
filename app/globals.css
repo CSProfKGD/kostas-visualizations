@@ -154,7 +154,8 @@ a:focus-visible {
   margin: 22px auto 0;
   font-size: clamp(3.1rem, 9.4vw, 9.3rem);
   font-weight: 720;
-  letter-spacing: -0.072em;
+  font-kerning: normal;
+  letter-spacing: -0.032em;
   line-height: 0.88;
 }
 
