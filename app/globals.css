@@ -180,7 +180,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
   gap: clamp(40px, 9vw, 150px);
-  align-items: end;
+  align-items: center;
   width: min(1320px, calc(100% - 48px));
   margin: 0 auto;
   padding: 0 0 clamp(60px, 8vw, 110px);
@@ -199,6 +199,12 @@ a:focus-visible {
   color: var(--muted);
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.55;
+}
+
+@media (min-width: 1100px) {
+  .collection-intro > p {
+    transform: translateX(-100px);
+  }
 }
 
 .visualization-grid {
@@ -292,13 +298,25 @@ a:focus-visible {
   filter: brightness(0.82) contrast(1.14);
 }
 
+.visualization-card[data-slug="partial-derivatives"] .image-link {
+  background: #0b0e10;
+}
+
+.visualization-card[data-slug="partial-derivatives"] .teaser-image {
+  transform: scaleY(0.92);
+}
+
+.visualization-card[data-slug="partial-derivatives"]:hover .teaser-image {
+  transform: scale(1.018, 0.9366);
+}
+
 .visualization-card[data-slug="local-minimum"]:hover .teaser-image {
   transform: scale(1.123);
 }
 
 .card-copy {
   display: grid;
-  min-height: 150px;
+  height: 170px;
   padding: clamp(22px, 2.2vw, 30px);
 }
 
@@ -332,7 +350,7 @@ a:focus-visible {
   grid-template-columns: auto minmax(0, 1fr);
   gap: clamp(22px, 3vw, 38px);
   align-items: center;
-  width: min(680px, 100%);
+  width: min(600px, 100%);
   margin: 0 auto;
   padding: clamp(22px, 3vw, 34px);
   border: 1px solid var(--line);
@@ -441,7 +459,7 @@ footer {
   }
 
   .card-copy {
-    min-height: 160px;
+    height: 190px;
   }
 }
 
@@ -495,7 +513,7 @@ footer {
   }
 
   .card-copy {
-    min-height: 0;
+    height: 210px;
     padding: 23px;
   }
 

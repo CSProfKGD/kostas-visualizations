@@ -32,7 +32,7 @@ const visualizations: Visualization[] = [
   {
     slug: "local-minimum",
     title: "Stuck in a Bad Local Minimum?",
-    description: "Why descent can settle for less.",
+    description: "Why local minima are rarely the problem.",
     category: "Optimization",
     href: "https://drive.google.com/file/d/152g4rEaCUWYxlKoeqIGiFclYNPV5a1ol/view?usp=share_link",
   },
