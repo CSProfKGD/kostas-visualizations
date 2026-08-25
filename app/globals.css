@@ -212,7 +212,6 @@ a:focus-visible {
 
 .visualization-card {
   min-width: 0;
-  border: 1px solid var(--line);
   border-radius: clamp(16px, 1.5vw, 22px);
   background: var(--surface);
   box-shadow: var(--card-shadow);
@@ -226,7 +225,6 @@ a:focus-visible {
 
 .visualization-card:hover {
   transform: translateY(-5px);
-  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
 }
 
 .visualization-card:focus-visible {
