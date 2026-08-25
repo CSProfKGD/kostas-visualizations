@@ -219,6 +219,8 @@ a:focus-visible {
 
 .visualization-card {
   min-width: 0;
+  display: grid;
+  grid-template-rows: auto 170px;
   border-radius: clamp(16px, 1.5vw, 22px);
   background: var(--surface);
   box-shadow: var(--card-shadow);
@@ -242,8 +244,9 @@ a:focus-visible {
 .image-link {
   position: relative;
   display: block;
-  aspect-ratio: 2.676 / 1;
+  aspect-ratio: 1672 / 625;
   background: #0a0a0a;
+  overflow: hidden;
 }
 
 :root:not([data-theme="dark"]) .image-link {
@@ -252,12 +255,8 @@ a:focus-visible {
 
 .image-link picture {
   position: absolute;
-  inset: -3%;
-}
-
-.visualization-card:is([data-slug="sphere-to-cubemap"], [data-slug="sphere-to-erp"]) .image-link picture {
-  inset: -1.2%;
-  transform: scaleY(1.035);
+  inset: 0;
+  display: block;
 }
 
 .teaser-image {
@@ -269,7 +268,8 @@ a:focus-visible {
 
 .teaser-image {
   object-fit: cover;
-  object-position: 50% 74%;
+  object-position: center;
+  border-radius: 0;
   transition: opacity 500ms ease, transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -290,33 +290,34 @@ a:focus-visible {
 }
 
 .visualization-card[data-slug="local-minimum"] .teaser-image {
-  object-position: 50% 80%;
-  transform: scale(1.105);
+  object-position: center;
+}
+
+.visualization-card[data-slug="sphere-to-cubemap"] .teaser-image,
+.visualization-card[data-slug="sphere-to-erp"] .teaser-image {
+  transform: scale(0.94);
+}
+
+.visualization-card[data-slug="sphere-to-cubemap"]:hover .teaser-image,
+.visualization-card[data-slug="sphere-to-erp"]:hover .teaser-image {
+  transform: scale(0.957);
+}
+
+.visualization-card[data-slug="partial-derivatives"] .teaser-image {
+  transform: scale(0.93);
+}
+
+.visualization-card[data-slug="partial-derivatives"]:hover .teaser-image {
+  transform: scale(0.947);
 }
 
 .visualization-card[data-slug="stereo-rectification"] .teaser-image {
   filter: brightness(0.82) contrast(1.14);
 }
 
-.visualization-card[data-slug="partial-derivatives"] .image-link {
-  background: #0b0e10;
-}
-
-.visualization-card[data-slug="partial-derivatives"] .teaser-image {
-  transform: scaleY(0.92);
-}
-
-.visualization-card[data-slug="partial-derivatives"]:hover .teaser-image {
-  transform: scale(1.018, 0.9366);
-}
-
-.visualization-card[data-slug="local-minimum"]:hover .teaser-image {
-  transform: scale(1.123);
-}
-
 .card-copy {
   display: grid;
-  height: 170px;
+  min-height: 0;
   padding: clamp(22px, 2.2vw, 30px);
 }
 
@@ -458,8 +459,8 @@ footer {
     grid-column: auto;
   }
 
-  .card-copy {
-    height: 190px;
+  .visualization-card {
+    grid-template-rows: auto 190px;
   }
 }
 
@@ -509,11 +510,11 @@ footer {
   }
 
   .visualization-card {
+    grid-template-rows: auto 210px;
     border-radius: 20px;
   }
 
   .card-copy {
-    height: 210px;
     padding: 23px;
   }
 
