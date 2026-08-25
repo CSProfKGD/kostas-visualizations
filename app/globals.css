@@ -135,7 +135,7 @@ a:focus-visible {
 .hero {
   width: min(1440px, calc(100% - 48px));
   margin: 0 auto;
-  padding: clamp(110px, 15vw, 220px) 0 clamp(100px, 13vw, 180px);
+  padding: clamp(64px, 7vw, 104px) 0 clamp(68px, 7vw, 104px);
   text-align: center;
 }
 
@@ -261,6 +261,10 @@ a:focus-visible {
   opacity: 0;
 }
 
+:root:not([data-theme="dark"]) .teaser-light {
+  transform: scale(1.075);
+}
+
 :root[data-theme="dark"] .teaser-light {
   opacity: 0;
 }
@@ -271,6 +275,10 @@ a:focus-visible {
 
 .visualization-card:hover .teaser-image {
   transform: scale(1.018);
+}
+
+:root:not([data-theme="dark"]) .visualization-card:hover .teaser-light {
+  transform: scale(1.092);
 }
 
 .card-copy {
@@ -353,7 +361,7 @@ footer {
   }
 
   .hero {
-    padding-top: 90px;
+    padding-top: 64px;
   }
 
   .hero h1 {
