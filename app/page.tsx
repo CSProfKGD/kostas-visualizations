@@ -10,7 +10,6 @@ type Visualization = {
   description: string;
   category: string;
   href: string;
-  linkLabel?: string;
   featured?: boolean;
 };
 
@@ -36,7 +35,6 @@ const visualizations: Visualization[] = [
     description: "Why descent can settle for less.",
     category: "Optimization",
     href: "https://drive.google.com/file/d/152g4rEaCUWYxlKoeqIGiFclYNPV5a1ol/view?usp=share_link",
-    linkLabel: "Watch video",
   },
   {
     slug: "gradient-descent",
@@ -94,7 +92,6 @@ const visualizations: Visualization[] = [
     description: "Slide. Pointwise multiply. Sum. Repeat.",
     category: "Signal Processing",
     href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
-    linkLabel: "Watch video",
   },
   {
     slug: "epipolar-geometry",
@@ -173,8 +170,15 @@ export default function Home() {
 
       <section className="visualization-grid" aria-label="Visualization collection">
         {visualizations.map((item, index) => (
-          <article className={`visualization-card${item.featured ? " featured" : ""}`} key={item.slug}>
-            <a className="image-link" href={item.href} target="_blank" rel="noreferrer" aria-label={`Open ${item.title}`}>
+          <a
+            className={`visualization-card${item.featured ? " featured" : ""}`}
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${item.title}`}
+            key={item.slug}
+          >
+            <div className="image-link">
               <picture>
                 <img
                   className="teaser-image teaser-light"
@@ -189,19 +193,15 @@ export default function Home() {
                   loading={index < 2 ? "eager" : "lazy"}
                 />
               </picture>
-              <span className="open-badge" aria-hidden="true"><ArrowIcon /></span>
-            </a>
+            </div>
             <div className="card-copy">
               <div>
                 <p className="category">{item.category}</p>
                 <h3>{item.title}</h3>
                 <p className="description">{item.description}</p>
               </div>
-              <a className="card-link" href={item.href} target="_blank" rel="noreferrer">
-                {item.linkLabel ?? "Open visualization"} <ArrowIcon />
-              </a>
             </div>
-          </article>
+          </a>
         ))}
       </section>
 
