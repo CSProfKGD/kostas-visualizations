@@ -19,20 +19,21 @@ Updated: 2026-08-25
 - Hero images reach the card's left/right/top edges inside the outer silhouette.
 - The hero-to-copy boundary is one straight horizontal seam, aligned across every card in a row.
 - No light/dark scale shift, no strip or mismatched background under a teaser.
+- Teaser URLs carry a release query string so browsers cannot reuse superseded raster assets after publishing.
 - The complete card is clickable; no arrow or “Open visualization” label.
 
 ## Accepted content and replacements
 
 - Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole; only the outgoing portion directly behind the opaque plane is subdued, and full cyan resumes exactly at the projected plane boundary before continuing to the image point.
-- Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve the legitimate cyan latitude/longitude arcs and the cubemap/ERP segment outlines. At the highlighted lower latitude only, omit the short cyan fragment directly crossing each orange seam while leaving the surrounding grid intact. Do not restore CSS downscaling that exposes the card surface.
-- Parallel Stereo: use the conifer-and-rock 3D scene from Perspective Projection and compact matte-black machine-vision cameras matching the Epipolar Geometry teaser style. The two cameras are rigid translations with identical orientation, flat tops, plain flat port-free rear panels, and matching partially visible front lens barrels. Camera bodies, optical axes, rear faces, and rendered image planes are mutually parallel. Exactly two deterministic projection rays run front-lens optical center → corresponding rendered pixel → one common world point; both rendered pixels use the same normalized horizontal scanline coordinate. Only the short world-side ray portion visually behind each image plane is subdued; camera-side and post-plane portions remain full opacity.
+- Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
+- Parallel Stereo: use the conifer-and-rock scene and compact matte-black cameras. Draw no projection rays. The two image planes show matching views, each with one cyan dashed epipolar line around its middle. Each dashed line is mathematically parallel to its own image plane's top/bottom boundaries and passes exactly through its red corresponding-point marker. Both image markers and the large-scene marker identify the same distinctive central light-gray rock. Draw no ground-plane crosses.
 - Stereo Rectification, Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes. Stereo Rectification retains only the outer source quadrilateral, four source corner markers, outer destination rectangle, photographs, and arrow; no internal cyan/red guide lines.
 - Partial Derivatives: use the new simplified saddle, one vertical slice plane, true intersection curve, and tangent line. Do not use the older two-plane image.
-- Planar Homography: no correspondence lines. Use the exact author portrait from the hero card on both the wall plane and the rectified plane, with four uniquely colored paired corner points.
+- Planar Homography: no correspondence lines. Use the exact author portrait from the hero card on the wall plane. The right portrait must be the direct deterministic projective warp of the exact selected left quadrilateral—not a fresh crop or regenerated portrait—with all four uniquely colored corner pairs and the same shoulder features touching the corresponding bottom corners.
 - Epipolar Geometry: use the clean outline-only triangle through the cameras and one world point. Remove the misleading translucent interior overlap and draw no epipolar line on either image plane; retain the cameras, baseline, rays, and one projection point per image plane. Both image-plane quadrilaterals must have complete lower boundaries. Only the short ray portions directly behind the image planes are subdued.
 - Local Minimum subtitle: “Why local minima are rarely the problem.”
 - System of Equations card title: “Linear Systems as Geometry”.
-- Final row order: Epipolar Geometry, Perspective Projection, Correlation (aka "Convolution").
+- Last four card order: Epipolar Geometry, Planar Homography, Perspective Projection, Correlation (aka "Convolution").
 - Sphere to Cubemap and Sphere to Equirectangular Projection use the tighter accepted framing with reduced left/right empty margin while retaining modest breathing room and black raster edges.
 - Partial Derivatives uses the vertically outpainted accepted framing with additional top/bottom breathing room.
 - Correlation title: `Correlation (aka "Convolution")` and multiplication symbol `*` in the teaser. The active sliding 3×3 kernel over the input must use the same white-center/gray-cross/dark-corner weights as the displayed kernel immediately to the right of `*`.
@@ -55,4 +56,4 @@ Updated: 2026-08-25
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
-- [x] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
+- [ ] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.

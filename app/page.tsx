@@ -73,18 +73,18 @@ const visualizations: Visualization[] = [
     href: "https://csprofkgd.github.io/parallel-stereo-visualization/",
   },
   {
-    slug: "planar-homography",
-    title: "Planar Homography",
-    description: "Plane-to-plane projective mapping.",
-    category: "Projective Geometry",
-    href: "https://csprofkgd.github.io/planar-homography-lab/",
-  },
-  {
     slug: "epipolar-geometry",
     title: "Epipolar Geometry",
     description: "The geometry behind stereo vision.",
     category: "Projective Geometry",
     href: "https://csprofkgd.github.io/epipolar-geometry-visualization/",
+  },
+  {
+    slug: "planar-homography",
+    title: "Planar Homography",
+    description: "Plane-to-plane projective mapping.",
+    category: "Projective Geometry",
+    href: "https://csprofkgd.github.io/planar-homography-lab/",
   },
   {
     slug: "perspective-projection",
@@ -101,6 +101,8 @@ const visualizations: Visualization[] = [
     href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
   },
 ];
+
+const TEASER_ASSET_VERSION = "20260825-final";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -172,13 +174,13 @@ export default function Home() {
               <picture>
                 <img
                   className="teaser-image teaser-light"
-                  src={`/teasers/${item.slug}-light.png`}
+                  src={`/teasers/${item.slug}-light.png?v=${TEASER_ASSET_VERSION}`}
                   alt={`${item.title} light-mode teaser`}
                   loading={index < 2 ? "eager" : "lazy"}
                 />
                 <img
                   className="teaser-image teaser-dark"
-                  src={`/teasers/${item.slug}-dark.png`}
+                  src={`/teasers/${item.slug}-dark.png?v=${TEASER_ASSET_VERSION}`}
                   alt={`${item.title} dark-mode teaser`}
                   loading={index < 2 ? "eager" : "lazy"}
                 />
