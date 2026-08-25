@@ -19,7 +19,7 @@ const visualizations: Visualization[] = [
     title: "Sphere to Cubemap",
     description: "Six views. One environment.",
     category: "Projective Geometry",
-    href: "https://github.com/CSProfKGD/sphere-to-cubemap",
+    href: "https://csprofkgd.github.io/sphere-to-cubemap/",
     featured: true,
   },
   {
@@ -27,7 +27,7 @@ const visualizations: Visualization[] = [
     title: "Sphere to Equirectangular Projection",
     description: "Same world. Different coordinates.",
     category: "Projective Geometry",
-    href: "https://github.com/CSProfKGD/sphere-to-equirectangular-projection",
+    href: "https://csprofkgd.github.io/sphere-to-equirectangular-projection/",
   },
   {
     slug: "local-minimum",
