@@ -9,6 +9,7 @@ from PIL import Image, PngImagePlugin
 ROOT = Path(__file__).resolve().parents[1]
 TEASERS = ROOT / "public" / "teasers"
 SOURCE_SIZE = (1672, 941)
+WIDE_SOURCE_SIZE = (2051, 767)
 CARD_SIZE = (1672, 625)
 
 # All generated compositions use the same visualization-panel placement. This
@@ -29,12 +30,14 @@ def prepare(path: Path) -> None:
         return
     if image.size == SOURCE_SIZE:
         crop = MASTER_CARD_CROP
+        card = image.crop(crop).resize(CARD_SIZE, Image.Resampling.LANCZOS)
+    elif image.size == WIDE_SOURCE_SIZE:
+        card = image.resize(CARD_SIZE, Image.Resampling.LANCZOS)
     elif image.size == CARD_SIZE:
         crop = LEGACY_CARD_CROP
+        card = image.crop(crop).resize(CARD_SIZE, Image.Resampling.LANCZOS)
     else:
         raise ValueError(f"Unexpected teaser size for {path.name}: {image.size}")
-
-    card = image.crop(crop).resize(CARD_SIZE, Image.Resampling.LANCZOS)
     metadata = PngImagePlugin.PngInfo()
     metadata.add_text("card_teaser_format", FORMAT_MARKER)
     card.save(path, optimize=True, pnginfo=metadata)

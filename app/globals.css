@@ -293,24 +293,6 @@ a:focus-visible {
   object-position: center;
 }
 
-.visualization-card[data-slug="sphere-to-cubemap"] .teaser-image,
-.visualization-card[data-slug="sphere-to-erp"] .teaser-image {
-  transform: scale(0.94);
-}
-
-.visualization-card[data-slug="sphere-to-cubemap"]:hover .teaser-image,
-.visualization-card[data-slug="sphere-to-erp"]:hover .teaser-image {
-  transform: scale(0.957);
-}
-
-.visualization-card[data-slug="partial-derivatives"] .teaser-image {
-  transform: scale(0.93);
-}
-
-.visualization-card[data-slug="partial-derivatives"]:hover .teaser-image {
-  transform: scale(0.947);
-}
-
 .visualization-card[data-slug="stereo-rectification"] .teaser-image {
   filter: brightness(0.82) contrast(1.14);
 }

@@ -52,7 +52,7 @@ const visualizations: Visualization[] = [
   },
   {
     slug: "system-of-equations",
-    title: "Interactive 3D System of Equations",
+    title: "Linear Systems as Geometry",
     description: "Where constraints meet, solutions appear.",
     category: "Linear Algebra",
     href: "https://csprofkgd.github.io/system-of-equations-visualization/",
@@ -87,18 +87,18 @@ const visualizations: Visualization[] = [
     href: "https://csprofkgd.github.io/perspective-projection/",
   },
   {
-    slug: "convolution",
-    title: "Correlation (aka \"Convolution\")",
-    description: "Slide. Pointwise multiply. Sum. Repeat.",
-    category: "Signal Processing",
-    href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
-  },
-  {
     slug: "epipolar-geometry",
     title: "Epipolar Geometry",
     description: "The geometry behind stereo vision.",
     category: "Projective Geometry",
     href: "https://csprofkgd.github.io/epipolar-geometry-visualization/",
+  },
+  {
+    slug: "convolution",
+    title: "Correlation (aka \"Convolution\")",
+    description: "Slide. Pointwise multiply. Sum. Repeat.",
+    category: "Signal Processing",
+    href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
   },
 ];
 

@@ -23,11 +23,16 @@ Updated: 2026-08-25
 
 ## Accepted content and replacements
 
-- Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The ray is hidden by the opaque plane except at the pinhole.
+- Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole, is hidden only while passing behind the opaque plane, and reappears after clearing the plane to continue to the projected image point.
+- Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Do not restore CSS downscaling that exposes the card surface.
+- Parallel Stereo: keep both rendered views unchanged. Each projection ray is one collinear world-point → rendered pixel → camera-center line. Epipolar lines pass through the projected pixels and use symmetric inward-converging orientations consistent with the converging cameras.
+- Stereo Rectification, Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes.
 - Partial Derivatives: use the new simplified saddle, one vertical slice plane, true intersection curve, and tangent line. Do not use the older two-plane image.
 - Planar Homography: no correspondence lines. Use four uniquely colored paired corner points on source and rectified image.
 - Epipolar Geometry: use the clean outline-only triangle through the cameras and one world point. Remove the misleading translucent interior overlap and draw no epipolar line on either image plane; retain the cameras, baseline, rays, and one projection point per image plane.
 - Local Minimum subtitle: “Why local minima are rarely the problem.”
+- System of Equations card title: “Linear Systems as Geometry”.
+- Final row order: Perspective Projection, Epipolar Geometry, Correlation (aka "Convolution").
 - Correlation title: `Correlation (aka "Convolution")` and multiplication symbol `*` in the teaser. The active sliding 3×3 kernel over the input must use the same white-center/gray-cross/dark-corner weights as the displayed kernel immediately to the right of `*`.
 - Author card: compact approximately 600px-wide card with no excess blank area on the right.
 

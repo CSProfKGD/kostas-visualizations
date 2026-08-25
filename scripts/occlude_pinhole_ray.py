@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Remove ray pixels hidden by the opaque pinhole plane."""
+"""Keep the incident ray visible and remove only its hidden outgoing segment."""
 
 from pathlib import Path
 
@@ -18,15 +18,13 @@ def occlude(path: Path):
     arr = np.asarray(image).copy()
     yy, xx = np.indices(arr.shape[:2])
 
-    # The ray is the line through the marked world point and pinhole. Replace
-    # the complete glowing band inside the opaque plane—not merely its bright
-    # cyan core—with the plane texture sampled immediately above and below it.
+    # The ray is the line through the marked world point and pinhole. The
+    # incident segment at the left must remain visible all the way to the
+    # aperture; only the segment to the right of the pinhole is hidden.
     ray_y = 0.24164 * xx + 324.0
     plane = (xx >= 744) & (xx <= 929) & (yy >= 290) & (yy <= 770)
-    # Preserve only the aperture itself. The ray glow immediately on either
-    # side is behind the opaque plane and must remain hidden.
     pinhole = (xx - 836) ** 2 + (yy - 526) ** 2 <= 10 ** 2
-    hidden_ray = plane & (np.abs(yy - ray_y) <= 15) & ~pinhole
+    hidden_ray = plane & (xx > 846) & (np.abs(yy - ray_y) <= 15) & ~pinhole
 
     upper_y = np.clip((ray_y - 24).astype(int), 0, arr.shape[0] - 1)
     lower_y = np.clip((ray_y + 24).astype(int), 0, arr.shape[0] - 1)
