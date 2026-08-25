@@ -88,7 +88,7 @@ const visualizations: Visualization[] = [
   },
   {
     slug: "convolution",
-    title: "Convolution Visualization",
+    title: "Correlation (aka \"Convolution\")",
     description: "Slide. Pointwise multiply. Sum. Repeat.",
     category: "Signal Processing",
     href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
