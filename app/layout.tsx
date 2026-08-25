@@ -14,17 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "#KostasVisualizations",
-  description: "CSProfKGD’s Computer Vision & Deep Learning Visualizations",
+  description: "Interactive visual explanations for projective geometry, optimization, linear algebra, signal processing, and calculus.",
   openGraph: {
     title: "#KostasVisualizations",
-    description: "CSProfKGD’s Computer Vision & Deep Learning Visualizations",
+    description: "Interactive visual explanations for projective geometry, optimization, linear algebra, signal processing, and calculus.",
     type: "website",
     images: [{ url: "/og.png", width: 1674, height: 909, alt: "#KostasVisualizations preview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "#KostasVisualizations",
-    description: "CSProfKGD’s Computer Vision & Deep Learning Visualizations",
+    description: "Interactive visual explanations for projective geometry, optimization, linear algebra, signal processing, and calculus.",
     images: ["/og.png"],
   },
   icons: {

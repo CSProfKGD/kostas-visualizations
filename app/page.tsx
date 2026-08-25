@@ -19,7 +19,7 @@ const visualizations: Visualization[] = [
     slug: "sphere-to-cubemap",
     title: "Sphere to Cubemap",
     description: "Six views. One environment.",
-    category: "Projection & Mapping",
+    category: "Projective Geometry",
     href: "https://github.com/CSProfKGD/sphere-to-cubemap",
     featured: true,
   },
@@ -27,7 +27,7 @@ const visualizations: Visualization[] = [
     slug: "sphere-to-erp",
     title: "Sphere to Equirectangular Projection",
     description: "Same world. Different coordinates.",
-    category: "Projection & Mapping",
+    category: "Projective Geometry",
     href: "https://github.com/CSProfKGD/sphere-to-equirectangular-projection",
   },
   {
@@ -63,7 +63,7 @@ const visualizations: Visualization[] = [
     slug: "stereo-rectification",
     title: "Stereo Rectification",
     description: "From arbitrary cameras to parallel views.",
-    category: "Stereo Vision",
+    category: "Projective Geometry",
     href: "https://csprofkgd.github.io/stereo-rectification-lab/",
     featured: true,
   },
@@ -71,7 +71,7 @@ const visualizations: Visualization[] = [
     slug: "parallel-stereo",
     title: "Parallel Stereo",
     description: "Two views. One point. One matching scanline.",
-    category: "Stereo Vision",
+    category: "Projective Geometry",
     href: "https://csprofkgd.github.io/parallel-stereo-visualization/",
   },
   {
@@ -85,14 +85,14 @@ const visualizations: Visualization[] = [
     slug: "perspective-projection",
     title: "Perspective Projection",
     description: "One point. One ray. One image.",
-    category: "Camera Geometry",
+    category: "Projective Geometry",
     href: "https://csprofkgd.github.io/perspective-projection/",
   },
   {
     slug: "convolution",
     title: "Convolution Visualization",
     description: "Slide. Pointwise multiply. Sum. Repeat.",
-    category: "Deep Learning",
+    category: "Signal Processing",
     href: "https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link",
     linkLabel: "Watch video",
   },
@@ -100,7 +100,7 @@ const visualizations: Visualization[] = [
     slug: "epipolar-geometry",
     title: "Epipolar Geometry",
     description: "The geometry behind stereo vision.",
-    category: "Stereo Vision",
+    category: "Projective Geometry",
     href: "https://csprofkgd.github.io/epipolar-geometry-visualization/",
   },
 ];
@@ -111,8 +111,6 @@ function ArrowIcon() {
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("light");
-  const [transitioning, setTransitioning] = useState(false);
-  const [transitionTarget, setTransitionTarget] = useState<Theme>("dark");
 
   useEffect(() => {
     const saved = window.localStorage.getItem("visualizations-theme");
@@ -126,35 +124,15 @@ export default function Home() {
   }, []);
 
   const changeTheme = () => {
-    if (transitioning) return;
     const nextTheme = theme === "dark" ? "light" : "dark";
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    const applyTheme = () => {
-      setTheme(nextTheme);
-      document.documentElement.dataset.theme = nextTheme;
-      window.localStorage.setItem("visualizations-theme", nextTheme);
-    };
-
-    if (reducedMotion) {
-      applyTheme();
-      return;
-    }
-
-    setTransitionTarget(nextTheme);
-    setTransitioning(true);
-    window.setTimeout(applyTheme, 310);
-    window.setTimeout(() => setTransitioning(false), 980);
+    setTheme(nextTheme);
+    document.documentElement.dataset.theme = nextTheme;
+    window.localStorage.setItem("visualizations-theme", nextTheme);
   };
 
   return (
-    <main className={`gallery${transitioning ? " is-dissolving" : ""}`} data-theme={theme}>
-      <div className="dissolve-field" data-target={transitionTarget} aria-hidden="true" />
+    <main className="gallery" data-theme={theme}>
       <nav className="nav-shell" aria-label="Primary navigation">
-        <a className="wordmark" href="#top" aria-label="Kostas Visualizations home">
-          <span className="wordmark-mark" aria-hidden="true" />
-          <span>Kostas Visualizations</span>
-        </a>
         <div className="nav-actions">
           <a href="https://csprofkgd.github.io" target="_blank" rel="noreferrer">
             CSProfKGD <ArrowIcon />
@@ -163,7 +141,6 @@ export default function Home() {
             className="theme-toggle"
             type="button"
             onClick={changeTheme}
-            disabled={transitioning}
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
           >
             <span className="theme-icon" aria-hidden="true">{theme === "dark" ? "☀" : "◐"}</span>
@@ -175,18 +152,17 @@ export default function Home() {
       <header className="hero" id="top">
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
-        <p>CSProfKGD’s Computer Vision &amp; Deep Learning Visualizations</p>
         <div className="hero-meta" aria-label="Collection summary">
           <span>12 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
-          <span>Vision · Geometry · Learning</span>
+          <span>Projective Geometry · Optimization · Linear Algebra · Signal Processing · Calculus</span>
         </div>
       </header>
 
       <section className="collection-intro" aria-labelledby="collection-title">
         <div>
           <p className="eyebrow">The collection</p>
-          <h2 id="collection-title">See the idea.<br />Then make it move.</h2>
+          <h2 id="collection-title">See it. Move it. Understand it.</h2>
         </div>
         <p>
           Interactive visual explanations for the geometry and mathematics behind
@@ -230,14 +206,6 @@ export default function Home() {
       </section>
 
       <footer>
-        <div>
-          <p className="footer-title">Keep looking.</p>
-          <p>Understanding starts when the picture becomes tangible.</p>
-        </div>
-        <div className="footer-links">
-          <a href="https://csprofkgd.github.io" target="_blank" rel="noreferrer">Academic webpage <ArrowIcon /></a>
-          <a href="https://x.com/CSProfKGD" target="_blank" rel="noreferrer">@CSProfKGD <ArrowIcon /></a>
-        </div>
         <p className="copyright">© {new Date().getFullYear()} Konstantinos (Kosta) Derpanis</p>
       </footer>
     </main>
