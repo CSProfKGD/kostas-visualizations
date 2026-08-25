@@ -258,10 +258,6 @@ a:focus-visible {
   opacity: 0;
 }
 
-:root:not([data-theme="dark"]) .teaser-light {
-  transform: scale(1.075);
-}
-
 :root[data-theme="dark"] .teaser-light {
   opacity: 0;
 }
@@ -274,17 +270,13 @@ a:focus-visible {
   transform: scale(1.018);
 }
 
-:root:not([data-theme="dark"]) .visualization-card:hover .teaser-light {
-  transform: scale(1.092);
+.visualization-card[data-slug="local-minimum"] .teaser-image {
+  object-position: 50% 80%;
+  transform: scale(1.105);
 }
 
-:root:not([data-theme="dark"]) .visualization-card[data-slug="local-minimum"] .teaser-light {
-  object-position: 50% 77%;
-  transform: scale(1.085);
-}
-
-:root:not([data-theme="dark"]) .visualization-card[data-slug="local-minimum"]:hover .teaser-light {
-  transform: scale(1.102);
+.visualization-card[data-slug="local-minimum"]:hover .teaser-image {
+  transform: scale(1.123);
 }
 
 .card-copy {
