@@ -80,18 +80,18 @@ const visualizations: Visualization[] = [
     href: "https://csprofkgd.github.io/planar-homography-lab/",
   },
   {
-    slug: "perspective-projection",
-    title: "Perspective Projection",
-    description: "One point. One ray. One image.",
-    category: "Projective Geometry",
-    href: "https://csprofkgd.github.io/perspective-projection/",
-  },
-  {
     slug: "epipolar-geometry",
     title: "Epipolar Geometry",
     description: "The geometry behind stereo vision.",
     category: "Projective Geometry",
     href: "https://csprofkgd.github.io/epipolar-geometry-visualization/",
+  },
+  {
+    slug: "perspective-projection",
+    title: "Perspective Projection",
+    description: "One point. One ray. One image.",
+    category: "Projective Geometry",
+    href: "https://csprofkgd.github.io/perspective-projection/",
   },
   {
     slug: "convolution",

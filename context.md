@@ -23,16 +23,18 @@ Updated: 2026-08-25
 
 ## Accepted content and replacements
 
-- Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole, is hidden only while passing behind the opaque plane, and reappears after clearing the plane to continue to the projected image point.
-- Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Do not restore CSS downscaling that exposes the card surface.
-- Parallel Stereo: keep both rendered views unchanged. Each projection ray is one collinear world-point → rendered pixel → camera-center line. Epipolar lines pass through the projected pixels and use symmetric inward-converging orientations consistent with the converging cameras.
-- Stereo Rectification, Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes.
+- Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole; only the outgoing portion directly behind the opaque plane is subdued, and full cyan resumes exactly at the projected plane boundary before continuing to the image point.
+- Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve the legitimate cyan latitude/longitude arcs and the cubemap/ERP segment outlines. At the highlighted lower latitude only, omit the short cyan fragment directly crossing each orange seam while leaving the surrounding grid intact. Do not restore CSS downscaling that exposes the card surface.
+- Parallel Stereo: use the conifer-and-rock 3D scene from Perspective Projection and compact matte-black machine-vision cameras matching the Epipolar Geometry teaser style. The two cameras are rigid translations with identical orientation, flat tops, plain flat port-free rear panels, and matching partially visible front lens barrels. Camera bodies, optical axes, rear faces, and rendered image planes are mutually parallel. Exactly two deterministic projection rays run front-lens optical center → corresponding rendered pixel → one common world point; both rendered pixels use the same normalized horizontal scanline coordinate. Only the short world-side ray portion visually behind each image plane is subdued; camera-side and post-plane portions remain full opacity.
+- Stereo Rectification, Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes. Stereo Rectification retains only the outer source quadrilateral, four source corner markers, outer destination rectangle, photographs, and arrow; no internal cyan/red guide lines.
 - Partial Derivatives: use the new simplified saddle, one vertical slice plane, true intersection curve, and tangent line. Do not use the older two-plane image.
-- Planar Homography: no correspondence lines. Use four uniquely colored paired corner points on source and rectified image.
-- Epipolar Geometry: use the clean outline-only triangle through the cameras and one world point. Remove the misleading translucent interior overlap and draw no epipolar line on either image plane; retain the cameras, baseline, rays, and one projection point per image plane.
+- Planar Homography: no correspondence lines. Use the exact author portrait from the hero card on both the wall plane and the rectified plane, with four uniquely colored paired corner points.
+- Epipolar Geometry: use the clean outline-only triangle through the cameras and one world point. Remove the misleading translucent interior overlap and draw no epipolar line on either image plane; retain the cameras, baseline, rays, and one projection point per image plane. Both image-plane quadrilaterals must have complete lower boundaries. Only the short ray portions directly behind the image planes are subdued.
 - Local Minimum subtitle: “Why local minima are rarely the problem.”
 - System of Equations card title: “Linear Systems as Geometry”.
-- Final row order: Perspective Projection, Epipolar Geometry, Correlation (aka "Convolution").
+- Final row order: Epipolar Geometry, Perspective Projection, Correlation (aka "Convolution").
+- Sphere to Cubemap and Sphere to Equirectangular Projection use the tighter accepted framing with reduced left/right empty margin while retaining modest breathing room and black raster edges.
+- Partial Derivatives uses the vertically outpainted accepted framing with additional top/bottom breathing room.
 - Correlation title: `Correlation (aka "Convolution")` and multiplication symbol `*` in the teaser. The active sliding 3×3 kernel over the input must use the same white-center/gray-cross/dark-corner weights as the displayed kernel immediately to the right of `*`.
 - Author card: compact approximately 600px-wide card with no excess blank area on the right.
 
@@ -53,4 +55,4 @@ Updated: 2026-08-25
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
-- [ ] Verify no browser errors and production deployment renders the replacement Perspective Projection and Partial Derivatives teasers.
+- [x] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
