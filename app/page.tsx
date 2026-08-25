@@ -155,7 +155,7 @@ export default function Home() {
         <div className="hero-meta" aria-label="Collection summary">
           <span>12 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
-          <span>Projective Geometry · Optimization · Linear Algebra · Signal Processing · Calculus</span>
+          <span>Computer Vision · Optimization · Machine Learning</span>
         </div>
       </header>
 
