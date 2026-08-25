@@ -79,7 +79,6 @@ a {
   width: 100%;
   min-height: 56px;
   padding: 0 max(24px, calc((100vw - 1440px) / 2));
-  border-bottom: 1px solid var(--line);
   background: var(--nav);
   backdrop-filter: saturate(180%) blur(22px);
   -webkit-backdrop-filter: saturate(180%) blur(22px);
@@ -281,6 +280,15 @@ a:focus-visible {
   transform: scale(1.092);
 }
 
+:root:not([data-theme="dark"]) .visualization-card[data-slug="local-minimum"] .teaser-light {
+  object-position: 50% 77%;
+  transform: scale(1.085);
+}
+
+:root:not([data-theme="dark"]) .visualization-card[data-slug="local-minimum"]:hover .teaser-light {
+  transform: scale(1.102);
+}
+
 .card-copy {
   display: grid;
   min-height: 150px;
@@ -304,6 +312,98 @@ a:focus-visible {
   margin: 12px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.instructor-section {
+  width: min(1320px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 0 0 clamp(70px, 9vw, 130px);
+}
+
+.instructor-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 38px);
+  align-items: center;
+  width: min(680px, 100%);
+  margin: 0 auto;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+  transition: background 500ms ease, border-color 500ms ease;
+}
+
+.instructor-portrait {
+  width: clamp(132px, 15vw, 190px);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-solid);
+  object-fit: cover;
+}
+
+.instructor-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.instructor-copy h2 {
+  margin: 5px 0 7px;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  font-weight: 680;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.instructor-copy > p:last-of-type {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.45;
+}
+
+.instructor-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.instructor-links a {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--muted);
+  transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.instructor-links a:hover {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  transform: translateY(-2px);
+}
+
+.instructor-links svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+.instructor-links a:nth-child(-n + 2) svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 footer {
@@ -356,6 +456,7 @@ footer {
   .hero,
   .collection-intro,
   .visualization-grid,
+  .instructor-section,
   footer {
     width: min(100% - 28px, 1440px);
   }
@@ -389,6 +490,19 @@ footer {
   .card-copy {
     min-height: 0;
     padding: 23px;
+  }
+
+  .instructor-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .instructor-portrait {
+    justify-self: center;
+  }
+
+  .instructor-links {
+    justify-content: center;
   }
 
 }
