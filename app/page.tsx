@@ -102,7 +102,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260825-homography-marker-final";
+const TEASER_ASSET_VERSION = "20260825-stereo-rectification-final";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
