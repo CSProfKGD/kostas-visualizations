@@ -102,7 +102,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260825-parallel-stereo-final";
+const TEASER_ASSET_VERSION = "20260826-mobile-spacing-parallel-stereo";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");

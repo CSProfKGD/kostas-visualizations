@@ -447,6 +447,14 @@ footer {
   }
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .instructor-card {
+    grid-template-columns: auto max-content;
+    width: max-content;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 720px) {
   .visualization-grid {
     grid-template-columns: 1fr;
@@ -493,7 +501,7 @@ footer {
   }
 
   .visualization-card {
-    grid-template-rows: auto 210px;
+    grid-template-rows: auto 168px;
     border-radius: 20px;
   }
 

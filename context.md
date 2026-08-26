@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-08-25
+Updated: 2026-08-26
 
 ## Production
 
@@ -26,7 +26,7 @@ Updated: 2026-08-25
 
 - Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole; only the outgoing portion directly behind the opaque plane is subdued, and full cyan resumes exactly at the projected plane boundary before continuing to the image point.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
-- Parallel Stereo: use the user-supplied final raster `codex-clipboard-0e483603-2620-413f-b22a-191a02cb7226.png` for both dark and light teaser assets.
+- Parallel Stereo: use the user-supplied 2026-08-26 raster `codex-clipboard-6e65b9e5-d880-4fba-82dc-8fe4fee21686.png`, normalized to the shared 1672×625 canvas for both dark and light teaser assets.
 - Stereo Rectification uses the user-supplied final raster `codex-clipboard-f95718d9-d220-469a-b67a-32e735d792ae.png` for both dark and light teaser assets. Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes.
 - Partial Derivatives: use the new simplified saddle, one vertical slice plane, true intersection curve, and tangent line. Do not use the older two-plane image.
 - Planar Homography: no correspondence lines. Use the exact author portrait from the hero card on the wall plane. The right portrait must be the direct deterministic projective warp of the exact selected left quadrilateral—not a fresh crop or regenerated portrait—with all four uniquely colored corner pairs and the same shoulder features touching the corresponding bottom corners.
@@ -38,6 +38,8 @@ Updated: 2026-08-25
 - Partial Derivatives uses the vertically outpainted accepted framing with additional top/bottom breathing room.
 - Correlation title: `Correlation (aka "Convolution")` and multiplication symbol `*` in the teaser. The active sliding 3×3 kernel over the input must use the same white-center/gray-cross/dark-corner weights as the displayed kernel immediately to the right of `*`.
 - Author card: compact approximately 600px-wide card with no excess blank area on the right.
+- Mobile card copy regions use a compact shared height with no excessive dead space below the descriptions.
+- In mobile landscape, the author card shrink-wraps its portrait, copy, and link controls so no unused panel area remains on the right.
 
 ## Typography and page content
 
