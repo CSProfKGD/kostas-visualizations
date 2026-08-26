@@ -38,7 +38,7 @@ Updated: 2026-08-26
 - Partial Derivatives uses the vertically outpainted accepted framing with additional top/bottom breathing room.
 - Correlation title: `Correlation (aka "Convolution")` and multiplication symbol `*` in the teaser. The active sliding 3×3 kernel over the input must use the same white-center/gray-cross/dark-corner weights as the displayed kernel immediately to the right of `*`.
 - Author card: compact approximately 600px-wide card with no excess blank area on the right.
-- Mobile card copy regions use a compact shared height with no excessive dead space below the descriptions.
+- Mobile portrait and landscape card copy regions use a compact shared 126px height with vertically balanced copy and no excessive dead space below the descriptions.
 - In mobile landscape, the author card shrink-wraps its portrait, copy, and link controls so no unused panel area remains on the right.
 
 ## Typography and page content

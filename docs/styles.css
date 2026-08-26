@@ -446,6 +446,23 @@ footer {
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
+  .visualization-card {
+    grid-template-rows: auto 126px;
+  }
+
+  .card-copy {
+    align-content: center;
+    padding: 14px 22px 8px;
+  }
+
+  .card-copy h3 {
+    margin-top: 6px;
+  }
+
+  .description {
+    margin-top: 8px;
+  }
+
   .instructor-card {
     grid-template-columns: auto max-content;
     width: max-content;
@@ -499,12 +516,21 @@ footer {
   }
 
   .visualization-card {
-    grid-template-rows: auto 168px;
+    grid-template-rows: auto 126px;
     border-radius: 20px;
   }
 
   .card-copy {
-    padding: 23px;
+    align-content: center;
+    padding: 14px 22px 8px;
+  }
+
+  .card-copy h3 {
+    margin-top: 6px;
+  }
+
+  .description {
+    margin-top: 8px;
   }
 
   .instructor-card {
