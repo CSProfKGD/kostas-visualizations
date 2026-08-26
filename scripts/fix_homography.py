@@ -9,7 +9,7 @@ SOURCE = Path(
     "01a0396b-3a11-7392-ba1d-7b8395e70743/"
     "exec-b92797f8-8ba9-449d-88a5-6752f0e2b429.png"
 )
-OUTPUT = ROOT / "public/teasers/planar-homography-master.png"
+OUTPUT = ROOT / "public/masters/planar-homography-master.png"
 
 
 def main() -> None:
@@ -44,6 +44,11 @@ def main() -> None:
     draw = ImageDraw.Draw(image)
     cyan = (29, 219, 239)
     stroke = 5
+
+    # The generated source already contains a slightly offset yellow marker at
+    # the destination's upper-right corner. Clear that small source artifact
+    # before rebuilding the border and drawing the single canonical marker.
+    draw.rectangle((1888, 78, 1940, 140), fill=(0, 0, 0))
     draw.rectangle((dul[0], dul[1], dur[0], dlr[1]), outline=cyan, width=stroke)
 
     markers = [
