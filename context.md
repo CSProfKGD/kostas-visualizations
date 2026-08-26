@@ -56,4 +56,4 @@ Updated: 2026-08-25
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
-- [ ] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
+- [x] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
