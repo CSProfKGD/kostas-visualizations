@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive computer vision, machine learning, and optimization visualizations by Kosta Derpanis.">
+  <title>#KostasVisualizations</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script>document.documentElement.dataset.theme=localStorage.getItem('visualizations-theme')||'dark';</script>
+</head>
+<body>
+<main class="gallery">
+  <nav class="nav-shell" aria-label="Primary navigation"><div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Switch color mode"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button></div></nav>
+  <header class="hero" id="top">
+    <div class="hero-kicker">A visual learning collection by CSProfKGD</div>
+    <h1>#KostasVisualizations</h1>
+    <div class="hero-meta" aria-label="Collection summary"><span>12 interactive ideas</span><span class="meta-divider" aria-hidden="true"></span><span>Computer Vision · Machine Learning · Optimization</span></div>
+  </header>
+  <section class="collection-intro" aria-labelledby="collection-title">
+    <div><p class="eyebrow">The collection</p><h2 id="collection-title">See it. Move it. Understand it.</h2></div>
+    <p>Interactive visual explanations for the geometry and mathematics behind modern computer vision. Each experience turns an abstract construction into something you can inspect, manipulate, and understand.</p>
+  </section>
+  <section class="visualization-grid" aria-label="Visualization collection">
+    <a class="visualization-card featured" href="https://csprofkgd.github.io/sphere-to-cubemap/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/sphere-to-cubemap-dark.png" alt="Sphere to Cubemap teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Sphere to Cubemap</h3><p class="description">Six views. One environment.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/sphere-to-equirectangular-projection/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/sphere-to-erp-dark.png" alt="Sphere to Equirectangular Projection teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Sphere to Equirectangular Projection</h3><p class="description">Same world. Different coordinates.</p></div></div></a>
+    <a class="visualization-card" href="https://drive.google.com/file/d/152g4rEaCUWYxlKoeqIGiFclYNPV5a1ol/view?usp=share_link" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/local-minimum-dark.png" alt="Stuck in a Bad Local Minimum teaser"></div><div class="card-copy"><div><p class="category">Optimization</p><h3>Stuck in a Bad Local Minimum?</h3><p class="description">Why local minima are rarely the problem.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/gradient-descent-lab/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/gradient-descent-dark.png" alt="Gradient Descent teaser"></div><div class="card-copy"><div><p class="category">Optimization</p><h3>Gradient Descent</h3><p class="description">Tighten up your learning rate. We’re going down.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/partial-derivatives-visualization/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/partial-derivatives-dark.png" alt="Partial Derivatives teaser"></div><div class="card-copy"><div><p class="category">Calculus</p><h3>Partial Derivatives</h3><p class="description">Hold one variable constant. Follow the curve. Read the slope.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/system-of-equations-visualization/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/system-of-equations-dark.png" alt="Linear Systems as Geometry teaser"></div><div class="card-copy"><div><p class="category">Linear Algebra</p><h3>Linear Systems as Geometry</h3><p class="description">Where constraints meet, solutions appear.</p></div></div></a>
+    <a class="visualization-card featured" href="https://csprofkgd.github.io/stereo-rectification-lab/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/stereo-rectification-dark.png" alt="Stereo Rectification teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Stereo Rectification</h3><p class="description">From arbitrary cameras to parallel views.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/parallel-stereo-visualization/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/parallel-stereo-dark.png" alt="Parallel Stereo teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Parallel Stereo</h3><p class="description">Two views. One point. One matching scanline.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/epipolar-geometry-visualization/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/epipolar-geometry-dark.png" alt="Epipolar Geometry teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Epipolar Geometry</h3><p class="description">The geometry behind stereo vision.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/planar-homography-lab/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/planar-homography-dark.png" alt="Planar Homography teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Planar Homography</h3><p class="description">Plane-to-plane projective mapping.</p></div></div></a>
+    <a class="visualization-card" href="https://csprofkgd.github.io/perspective-projection/" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/perspective-projection-dark.png" alt="Perspective Projection teaser"></div><div class="card-copy"><div><p class="category">Projective Geometry</p><h3>Perspective Projection</h3><p class="description">One point. One ray. One image.</p></div></div></a>
+    <a class="visualization-card" href="https://drive.google.com/file/d/1170Cbv73a7XmUNXWXli-rCGe7KW_KXXF/view?usp=share_link" target="_blank" rel="noreferrer"><div class="image-link"><img class="teaser-image" src="./teasers/convolution-dark.png" alt="Correlation teaser"></div><div class="card-copy"><div><p class="category">Signal Processing</p><h3>Correlation (aka &quot;Convolution&quot;)</h3><p class="description">Slide. Pointwise multiply. Sum. Repeat.</p></div></div></a>
+  </section>
+  <section class="instructor-section" aria-label="About Kosta Derpanis"><aside class="instructor-card"><img class="instructor-portrait" src="./KGD-profile.png" alt="Illustrated portrait of Kosta Derpanis"><div class="instructor-copy"><p class="instructor-label">Your Tour Guide</p><h2>Kosta Derpanis</h2><p>Associate Professor<br>York University</p><div class="instructor-links"><a href="https://csprofkgd.github.io" target="_blank" rel="noreferrer" aria-label="Homepage">⌂</a><a href="mailto:kosta@yorku.ca" aria-label="Email">✉</a><a href="https://x.com/CSProfKGD" target="_blank" rel="noreferrer" aria-label="X">𝕏</a><a href="https://www.linkedin.com/in/kosta-derpanis-a07824122/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a></div></div></aside></section>
+  <footer><p class="copyright">© 2026 Konstantinos (Kosta) Derpanis</p></footer>
+</main>
+<script>
+const root=document.documentElement,button=document.querySelector('.theme-toggle'),label=document.querySelector('.theme-label'),icon=document.querySelector('.theme-icon');
+function render(){const dark=root.dataset.theme==='dark';label.textContent=dark?'Light':'Dark';icon.textContent=dark?'☀':'◐';}
+button.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('visualizations-theme',root.dataset.theme);render();});render();
+</script>
+</body>
+</html>
