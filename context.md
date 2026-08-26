@@ -24,7 +24,7 @@ Updated: 2026-08-26
 
 ## Accepted content and replacements
 
-- Perspective Projection: use the new photoreal scene with tree/rocks, opaque pinhole plane, one ray, and inverted image-plane projection. The incident ray remains visible from the world point to the pinhole; only the outgoing portion directly behind the opaque plane is subdued, and full cyan resumes exactly at the projected plane boundary before continuing to the image point.
+- Perspective Projection: use the user-supplied `Gemini_Generated_Image_ahfuv7ahfuv7ahfu.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
 - Parallel Stereo: use the user-supplied `/Users/kosta/Downloads/binocular.png` raster, already at the shared 1672×625 canvas, identically for both dark and light teaser assets.
 - Stereo Rectification uses the user-supplied final raster `codex-clipboard-f95718d9-d220-469a-b67a-32e735d792ae.png` for both dark and light teaser assets. Epipolar Geometry, Local Minimum, and Parallel Stereo use outpainted compositions with black background at every raster edge and breathing room around all cameras, points, surfaces, paths, and image planes.

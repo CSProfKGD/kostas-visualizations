@@ -102,7 +102,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260826-binocular-parallel-stereo";
+const TEASER_ASSET_VERSION = "20260826-gemini-perspective-projection";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
