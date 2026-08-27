@@ -37,6 +37,13 @@ const visualizations: Visualization[] = [
     href: "https://drive.google.com/file/d/152g4rEaCUWYxlKoeqIGiFclYNPV5a1ol/view?usp=share_link",
   },
   {
+    slug: "goldilocks-learning-rates",
+    title: "The Goldilocks Principle of Learning Rates",
+    description: "One number. Three very different outcomes.",
+    category: "Optimization",
+    href: "https://csprofkgd.github.io/goldilocks-learning-rates/",
+  },
+  {
     slug: "gradient-descent",
     title: "Gradient Descent",
     description: "Tighten up your learning rate. We’re going down.",
@@ -102,7 +109,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260826-pp-black-perspective-projection";
+const TEASER_ASSET_VERSION = "20260827-goldilocks-learning-rates";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -141,7 +148,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>12 interactive ideas</span>
+          <span>13 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>

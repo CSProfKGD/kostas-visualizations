@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-08-26
+Updated: 2026-08-27
 
 ## Production
 
@@ -10,7 +10,7 @@ Updated: 2026-08-26
 
 ## Authoritative shared card state
 
-- Twelve cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Thirteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -24,6 +24,7 @@ Updated: 2026-08-26
 
 ## Accepted content and replacements
 
+- Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the user-supplied teddy-bear/bowl raster on the shared 1672×625 black teaser canvas, identically in light and dark modes.
 - Perspective Projection: use the user-supplied `/Users/kosta/Downloads/PP_black.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
 - Parallel Stereo: use the user-supplied `/Users/kosta/Downloads/binocular.png` raster, already at the shared 1672×625 canvas, identically for both dark and light teaser assets.
