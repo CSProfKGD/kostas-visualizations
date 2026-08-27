@@ -109,7 +109,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260827-goldilocks-learning-rates";
+const TEASER_ASSET_VERSION = "20260827-goldilocks-outpainted-tight";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");

@@ -24,7 +24,7 @@ Updated: 2026-08-27
 
 ## Accepted content and replacements
 
-- Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the user-supplied teddy-bear/bowl raster on the shared 1672×625 black teaser canvas, identically in light and dark modes.
+- Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the tightly framed, horizontally outpainted teddy-bear/bowl composition on the shared 1672×625 teaser canvas, with the indigo-purple scene continuing seamlessly to every raster edge and no black side bars; use the identical raster in light and dark modes.
 - Perspective Projection: use the user-supplied `/Users/kosta/Downloads/PP_black.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
 - Parallel Stereo: use the user-supplied `/Users/kosta/Downloads/binocular.png` raster, already at the shared 1672×625 canvas, identically for both dark and light teaser assets.
@@ -52,10 +52,10 @@ Updated: 2026-08-27
 
 ## Final verification (must all pass)
 
-- [x] Desktop light: visually inspect all 12 cards and author card.
-- [x] Desktop dark: visually inspect all 12 cards and author card.
-- [x] Mobile light: scroll through all 12 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [x] Mobile dark: scroll through all 12 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Desktop light: visually inspect all 13 cards and author card.
+- [x] Desktop dark: visually inspect all 13 cards and author card.
+- [x] Mobile light: scroll through all 13 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Mobile dark: scroll through all 13 cards; verify top corners, side clipping, seams, and equal dimensions.
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
