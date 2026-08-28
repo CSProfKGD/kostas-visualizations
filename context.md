@@ -10,7 +10,7 @@ Updated: 2026-08-28
 
 ## Authoritative shared card state
 
-- Sixteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Seventeen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -24,6 +24,7 @@ Updated: 2026-08-28
 
 ## Accepted content and replacements
 
+- Steerable Filters: place immediately before `Correlation (aka "Convolution")`. Use title “Steerable Filters,” subtitle “A Few Filters. Infinite Orientations.,” Signal Processing category, and `https://csprofkgd.github.io/steerable-filters/`. Use the user-supplied `steerable_filters_analytic_1672x625.png` at the shared 1672×625 canvas and use the identical raster in light and dark modes.
 - Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the tightly framed, horizontally outpainted teddy-bear/bowl composition on the shared 1672×625 teaser canvas, with the indigo-purple scene continuing seamlessly to every raster edge and no black side bars; use the identical raster in light and dark modes.
 - 2D Transformations: place immediately before “Fourier Series.” Use title “2D Transformations,” subtitle “Geometry in motion.,” Linear Algebra category, and `https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing`. Use the user-supplied `2D transformations teaser.png`, normalized to the shared 1672×625 canvas and used identically in light and dark modes.
 - Fourier Series: place after “2D Transformations” and before “Taylor Series Approximation.” Use title “Fourier Series,” subtitle “Complicated Shapes. Simple Ingredients.,” Signal Processing category, and `https://drive.google.com/file/d/1wQ2iaEX813kKAGonzwIgRop6bit9Utgk/view?usp=sharing`. Use the user-supplied `Fourier Series.png` on the shared 1672×625 canvas and use the identical raster in light and dark modes.
@@ -55,10 +56,10 @@ Updated: 2026-08-28
 
 ## Final verification (must all pass)
 
-- [x] Desktop light: visually inspect all 16 cards and author card.
-- [x] Desktop dark: visually inspect all 16 cards and author card.
-- [x] Mobile light: scroll through all 16 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [x] Mobile dark: scroll through all 16 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Desktop light: visually inspect all 17 cards and author card.
+- [x] Desktop dark: visually inspect all 17 cards and author card.
+- [x] Mobile light: scroll through all 17 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Mobile dark: scroll through all 17 cards; verify top corners, side clipping, seams, and equal dimensions.
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.

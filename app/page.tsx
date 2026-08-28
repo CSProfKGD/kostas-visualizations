@@ -101,6 +101,13 @@ const visualizations: Visualization[] = [
     href: "https://csprofkgd.github.io/perspective-projection/",
   },
   {
+    slug: "steerable-filters",
+    title: "Steerable Filters",
+    description: "A Few Filters. Infinite Orientations.",
+    category: "Signal Processing",
+    href: "https://csprofkgd.github.io/steerable-filters/",
+  },
+  {
     slug: "convolution",
     title: "Correlation (aka \"Convolution\")",
     description: "Slide. Pointwise multiply. Sum. Repeat.",
@@ -130,7 +137,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260828-fourier-series";
+const TEASER_ASSET_VERSION = "20260828-steerable-filters";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -169,7 +176,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>16 interactive ideas</span>
+          <span>17 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>
