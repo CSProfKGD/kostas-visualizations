@@ -114,9 +114,16 @@ const visualizations: Visualization[] = [
     category: "Linear Algebra",
     href: "https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing",
   },
+  {
+    slug: "taylor-series-approximation",
+    title: "Taylor Series Approximation",
+    description: "Local Insight. Global Impact.",
+    category: "Calculus",
+    href: "https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing",
+  },
 ];
 
-const TEASER_ASSET_VERSION = "20260827-2d-transformations";
+const TEASER_ASSET_VERSION = "20260827-taylor-series";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -155,7 +162,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>14 interactive ideas</span>
+          <span>15 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>

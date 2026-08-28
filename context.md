@@ -10,7 +10,7 @@ Updated: 2026-08-27
 
 ## Authoritative shared card state
 
-- Fourteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Fifteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -26,6 +26,7 @@ Updated: 2026-08-27
 
 - Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the tightly framed, horizontally outpainted teddy-bear/bowl composition on the shared 1672×625 teaser canvas, with the indigo-purple scene continuing seamlessly to every raster edge and no black side bars; use the identical raster in light and dark modes.
 - 2D Transformations: final card in the collection. Use title “2D Transformations,” subtitle “Geometry in motion.,” Linear Algebra category, and `https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing`. Use the user-supplied `2D transformations teaser.png`, normalized to the shared 1672×625 canvas and used identically in light and dark modes.
+- Taylor Series Approximation: final card in the collection, after “2D Transformations.” Use title “Taylor Series Approximation,” subtitle “Local Insight. Global Impact.,” Calculus category, and `https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing`. Preserve the user-supplied `taylor_series_fx_label_raised_1696x624.png` as the master, normalize it to the shared 1672×625 canvas, and use the identical raster in light and dark modes.
 - Perspective Projection: use the user-supplied `/Users/kosta/Downloads/PP_black.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
 - Parallel Stereo: use the user-supplied `/Users/kosta/Downloads/binocular.png` raster, already at the shared 1672×625 canvas, identically for both dark and light teaser assets.
@@ -53,10 +54,10 @@ Updated: 2026-08-27
 
 ## Final verification (must all pass)
 
-- [ ] Desktop light: visually inspect all 14 cards and author card.
-- [ ] Desktop dark: visually inspect all 14 cards and author card.
-- [ ] Mobile light: scroll through all 14 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [ ] Mobile dark: scroll through all 14 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Desktop light: visually inspect all 15 cards and author card.
+- [x] Desktop dark: visually inspect all 15 cards and author card.
+- [x] Mobile light: scroll through all 15 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Mobile dark: scroll through all 15 cards; verify top corners, side clipping, seams, and equal dimensions.
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
