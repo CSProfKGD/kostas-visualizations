@@ -115,6 +115,13 @@ const visualizations: Visualization[] = [
     href: "https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing",
   },
   {
+    slug: "fourier-series",
+    title: "Fourier Series",
+    description: "Complicated Shapes. Simple Ingredients.",
+    category: "Signal Processing",
+    href: "https://drive.google.com/file/d/1wQ2iaEX813kKAGonzwIgRop6bit9Utgk/view?usp=sharing",
+  },
+  {
     slug: "taylor-series-approximation",
     title: "Taylor Series Approximation",
     description: "Local Insight. Global Impact.",
@@ -123,7 +130,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260827-taylor-series";
+const TEASER_ASSET_VERSION = "20260828-fourier-series";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -162,7 +169,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>15 interactive ideas</span>
+          <span>16 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>
