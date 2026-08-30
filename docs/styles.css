@@ -219,7 +219,7 @@ a:focus-visible {
 .visualization-card {
   min-width: 0;
   display: grid;
-  grid-template-rows: auto 170px;
+  grid-template-rows: auto 150px;
   border-radius: clamp(16px, 1.5vw, 22px);
   background: var(--surface);
   box-shadow: var(--card-shadow);
@@ -299,7 +299,8 @@ a:focus-visible {
 .card-copy {
   display: grid;
   min-height: 0;
-  padding: clamp(22px, 2.2vw, 30px);
+  align-content: center;
+  padding: 14px 22px 8px;
 }
 
 .category {
@@ -441,7 +442,7 @@ footer {
   }
 
   .visualization-card {
-    grid-template-rows: auto 190px;
+    grid-template-rows: auto 150px;
   }
 }
 
@@ -452,15 +453,15 @@ footer {
 
   .card-copy {
     align-content: center;
-    padding: 14px 22px 8px;
+    padding: 12px 22px 6px;
   }
 
   .card-copy h3 {
-    margin-top: 6px;
+    margin-top: 5px;
   }
 
   .description {
-    margin-top: 8px;
+    margin-top: 7px;
   }
 
   .instructor-card {
@@ -522,15 +523,15 @@ footer {
 
   .card-copy {
     align-content: center;
-    padding: 14px 22px 8px;
+    padding: 12px 22px 6px;
   }
 
   .card-copy h3 {
-    margin-top: 6px;
+    margin-top: 5px;
   }
 
   .description {
-    margin-top: 8px;
+    margin-top: 7px;
   }
 
   .instructor-card {

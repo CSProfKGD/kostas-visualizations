@@ -56,11 +56,27 @@ Updated: 2026-08-28
 
 ## Final verification (must all pass)
 
-- [x] Desktop light: visually inspect all 17 cards and author card.
-- [x] Desktop dark: visually inspect all 17 cards and author card.
-- [x] Mobile light: scroll through all 17 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [x] Mobile dark: scroll through all 17 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Desktop light: visually inspect all 18 cards and author card.
+- [x] Desktop dark: visually inspect all 18 cards and author card.
+- [x] Mobile light: scroll through all 18 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Mobile dark: scroll through all 18 cards; verify top corners, side clipping, seams, and equal dimensions.
 - [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
 - [x] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
+
+## 2026-08-28 compact card spacing
+
+- Desktop and tablet card copy regions use a shared 150px height, reduced from 170px, with vertically centered content and compact `14px 22px 8px` padding.
+- Mobile portrait and landscape retain the shared 126px copy height with compact `12px 22px 6px` padding and tightened internal gaps so the longest title fits without overflow.
+- Verified all 17 cards at desktop and mobile widths in both light and dark modes: every card has one identical height per breakpoint and no copy overflow.
+
+## 2026-08-29 global vs. rolling shutter card
+
+- Final collection card: `Global vs. Rolling Shutter` / `One Frame. Many Moments.`
+- Category: `Computer Vision`.
+- Destination: `https://csprofkgd.github.io/global-vs-rolling-shutter/`.
+- The supplied master is preserved in `public/masters` and `docs/masters`; the displayed teaser is center-cropped to the shared `1672×625` canvas.
+- Light and dark mode use byte-identical teaser rasters to prevent any scale or crop shift during theme changes.
+- Visual QA passed with no browser errors or horizontal overflow: desktop cards are uniformly `358×284` with `358×134` teasers; portrait cards are uniformly `327×248` with `327×122` teasers; landscape cards are uniformly `352×257` with `352×131` teasers. The compact author card fits within the landscape viewport.
+- Collection count: 18 interactive ideas.

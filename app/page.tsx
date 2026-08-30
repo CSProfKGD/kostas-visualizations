@@ -135,9 +135,16 @@ const visualizations: Visualization[] = [
     category: "Calculus",
     href: "https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing",
   },
+  {
+    slug: "global-vs-rolling-shutter",
+    title: "Global vs. Rolling Shutter",
+    description: "One Frame. Many Moments.",
+    category: "Computer Vision",
+    href: "https://csprofkgd.github.io/global-vs-rolling-shutter/",
+  },
 ];
 
-const TEASER_ASSET_VERSION = "20260828-steerable-filters";
+const TEASER_ASSET_VERSION = "20260829-global-vs-rolling-shutter";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -176,7 +183,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>17 interactive ideas</span>
+          <span>18 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>
