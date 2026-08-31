@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-08-28
+Updated: 2026-08-31
 
 ## Production
 
@@ -10,7 +10,7 @@ Updated: 2026-08-28
 
 ## Authoritative shared card state
 
-- Seventeen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Nineteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -56,14 +56,14 @@ Updated: 2026-08-28
 
 ## Final verification (must all pass)
 
-- [x] Desktop light: visually inspect all 18 cards and author card.
-- [x] Desktop dark: visually inspect all 18 cards and author card.
-- [x] Mobile light: scroll through all 18 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [x] Mobile dark: scroll through all 18 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
-- [x] Verify all source teaser files have identical dimensions and square raster corners.
+- [ ] Desktop light: visually inspect all 19 cards and author card.
+- [ ] Desktop dark: visually inspect all 19 cards and author card.
+- [ ] Mobile light: scroll through all 19 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [ ] Mobile dark: scroll through all 19 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [ ] Programmatically compare hero height, copy-top Y position, and total card height for every row.
+- [ ] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
-- [x] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
+- [ ] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
 
 ## 2026-08-28 compact card spacing
 
@@ -74,9 +74,21 @@ Updated: 2026-08-28
 ## 2026-08-29 global vs. rolling shutter card
 
 - Final collection card: `Global vs. Rolling Shutter` / `One Frame. Many Moments.`
-- Category: `Computer Vision`.
+- Category: `Computational Photography`.
 - Destination: `https://csprofkgd.github.io/global-vs-rolling-shutter/`.
 - The supplied master is preserved in `public/masters` and `docs/masters`; the displayed teaser is center-cropped to the shared `1672×625` canvas.
 - Light and dark mode use byte-identical teaser rasters to prevent any scale or crop shift during theme changes.
 - Visual QA passed with no browser errors or horizontal overflow: desktop cards are uniformly `358×284` with `358×134` teasers; portrait cards are uniformly `327×248` with `327×122` teasers; landscape cards are uniformly `352×257` with `352×131` teasers. The compact author card fits within the landscape viewport.
 - Collection count: 18 interactive ideas.
+
+## 2026-08-31 Dolly Zoom card
+
+- Final collection card: `Dolly Zoom` / `Zoom In. Pull Back.`
+- Category: `Computer Vision`.
+- Destination: `https://csprofkgd.github.io/dolly-zoom/`.
+- The supplied raster is preserved in `public/masters` and `docs/masters`, normalized to the shared `1672×625` teaser canvas, and used byte-identically for light and dark modes.
+- Collection count: 19 interactive ideas.
+
+## 2026-08-31 rolling shutter category refinement
+
+- `Global vs. Rolling Shutter` is categorized as `Computational Photography` in both the React source and the static GitHub Pages build.

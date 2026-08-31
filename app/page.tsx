@@ -139,12 +139,19 @@ const visualizations: Visualization[] = [
     slug: "global-vs-rolling-shutter",
     title: "Global vs. Rolling Shutter",
     description: "One Frame. Many Moments.",
-    category: "Computer Vision",
+    category: "Computational Photography",
     href: "https://csprofkgd.github.io/global-vs-rolling-shutter/",
+  },
+  {
+    slug: "dolly-zoom",
+    title: "Dolly Zoom",
+    description: "Zoom In. Pull Back.",
+    category: "Computer Vision",
+    href: "https://csprofkgd.github.io/dolly-zoom/",
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260829-global-vs-rolling-shutter";
+const TEASER_ASSET_VERSION = "20260831-dolly-zoom";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -183,7 +190,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>18 interactive ideas</span>
+          <span>19 interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>
