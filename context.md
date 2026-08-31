@@ -84,7 +84,7 @@ Updated: 2026-08-31
 ## 2026-08-31 Dolly Zoom card
 
 - Final collection card: `Dolly Zoom` / `Zoom In. Pull Back.`
-- Category: `Computer Vision`.
+- Category: `Computational Photography`.
 - Destination: `https://csprofkgd.github.io/dolly-zoom/`.
 - The supplied raster is preserved in `public/masters` and `docs/masters`, normalized to the shared `1672×625` teaser canvas, and used byte-identically for light and dark modes.
 - Collection count: 19 interactive ideas.

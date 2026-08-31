@@ -146,7 +146,7 @@ const visualizations: Visualization[] = [
     slug: "dolly-zoom",
     title: "Dolly Zoom",
     description: "Zoom In. Pull Back.",
-    category: "Computer Vision",
+    category: "Computational Photography",
     href: "https://csprofkgd.github.io/dolly-zoom/",
   },
 ];
