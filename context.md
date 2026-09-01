@@ -92,3 +92,8 @@ Updated: 2026-08-31
 ## 2026-08-31 rolling shutter category refinement
 
 - `Global vs. Rolling Shutter` is categorized as `Computational Photography` in both the React source and the static GitHub Pages build.
+
+## 2026-08-31 Dolly Zoom teaser replacement
+
+- The final accepted Dolly Zoom/Vertigo teaser is the supplied black-background artwork with red `VERTIGO` title and `Zoom In. Pull Back.` subtitle.
+- The source is preserved as the Dolly Zoom master, normalized to the shared `1672×625` teaser canvas, and used byte-identically in light and dark modes.

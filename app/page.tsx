@@ -151,7 +151,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260831-dolly-zoom";
+const TEASER_ASSET_VERSION = "20260831-dolly-zoom-black";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
