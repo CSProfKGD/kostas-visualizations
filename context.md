@@ -10,7 +10,7 @@ Updated: 2026-08-31
 
 ## Authoritative shared card state
 
-- Nineteen cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Twenty cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -56,14 +56,15 @@ Updated: 2026-08-31
 
 ## Final verification (must all pass)
 
-- [ ] Desktop light: visually inspect all 19 cards and author card.
-- [ ] Desktop dark: visually inspect all 19 cards and author card.
-- [ ] Mobile light: scroll through all 19 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [ ] Mobile dark: scroll through all 19 cards; verify top corners, side clipping, seams, and equal dimensions.
-- [ ] Programmatically compare hero height, copy-top Y position, and total card height for every row.
-- [ ] Verify all source teaser files have identical dimensions and square raster corners.
+- [x] Desktop light: visually inspect all 20 cards and author card.
+- [x] Desktop dark: visually inspect all 20 cards and author card.
+- [x] Mobile light: scroll through all 20 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Mobile dark: scroll through all 20 cards; verify top corners, side clipping, seams, and equal dimensions.
+- [x] Programmatically compare hero height, copy-top Y position, and total card height for every row.
+- [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
-- [ ] Verify no browser errors in the validated local build. Confirm the production replacement assets immediately after deployment.
+- [x] Verify no browser errors in the validated local build.
+- [ ] Confirm the production replacement assets immediately after deployment.
 
 ## 2026-08-28 compact card spacing
 
@@ -97,3 +98,11 @@ Updated: 2026-08-31
 
 - The final accepted Dolly Zoom/Vertigo teaser is the supplied black-background artwork with red `VERTIGO` title and `Zoom In. Pull Back.` subtitle.
 - The source is preserved as the Dolly Zoom master, normalized to the shared `1672×625` teaser canvas, and used byte-identically in light and dark modes.
+
+## 2026-09-03 Eigenfaces card
+
+- Final collection card: `Eigenfaces` / `Face It: It’s Just Linear Algebra`.
+- Category: `Linear Algebra`.
+- Destination: `https://csprofkgd.github.io/eigenfaces-linear-carousel/`.
+- The supplied raster is preserved in `public/masters` and `docs/masters`, proportionally fitted to the shared black `1672×625` teaser canvas, and used byte-identically for light and dark modes.
+- Collection count: 20 interactive ideas.
