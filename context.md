@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-08-31
+Updated: 2026-09-21
 
 ## Production
 
@@ -10,7 +10,7 @@ Updated: 2026-08-31
 
 ## Authoritative shared card state
 
-- Twenty cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Twenty-one cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -28,7 +28,7 @@ Updated: 2026-08-31
 - Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the tightly framed, horizontally outpainted teddy-bear/bowl composition on the shared 1672×625 teaser canvas, with the indigo-purple scene continuing seamlessly to every raster edge and no black side bars; use the identical raster in light and dark modes.
 - 2D Transformations: place immediately before “Fourier Series.” Use title “2D Transformations,” subtitle “Geometry in motion.,” Linear Algebra category, and `https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing`. Use the user-supplied `2D transformations teaser.png`, normalized to the shared 1672×625 canvas and used identically in light and dark modes.
 - Fourier Series: place after “2D Transformations” and before “Taylor Series Approximation.” Use title “Fourier Series,” subtitle “Complicated Shapes. Simple Ingredients.,” Signal Processing category, and `https://drive.google.com/file/d/1wQ2iaEX813kKAGonzwIgRop6bit9Utgk/view?usp=sharing`. Use the user-supplied `Fourier Series.png` on the shared 1672×625 canvas and use the identical raster in light and dark modes.
-- Taylor Series Approximation: final card in the collection, after “Fourier Series.” Use title “Taylor Series Approximation,” subtitle “Local Insight. Global Impact.,” Calculus category, and `https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing`. Preserve the user-supplied `taylor_series_fx_label_raised_1696x624.png` as the master, normalize it to the shared 1672×625 canvas, and use the identical raster in light and dark modes.
+- Taylor Series Approximation: after “Fourier Series” and immediately before “Signal Aliasing.” Use title “Taylor Series Approximation,” subtitle “Local Insight. Global Impact.,” Calculus category, and `https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing`. Preserve the user-supplied `taylor_series_fx_label_raised_1696x624.png` as the master, normalize it to the shared 1672×625 canvas, and use the identical raster in light and dark modes.
 - Perspective Projection: use the user-supplied `/Users/kosta/Downloads/PP_black.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
 - Parallel Stereo: use the user-supplied `/Users/kosta/Downloads/binocular.png` raster, already at the shared 1672×625 canvas, identically for both dark and light teaser assets.
@@ -106,3 +106,15 @@ Updated: 2026-08-31
 - Destination: `https://csprofkgd.github.io/eigenfaces-linear-carousel/`.
 - The supplied raster is preserved in `public/masters` and `docs/masters`, proportionally fitted to the shared black `1672×625` teaser canvas, and used byte-identically for light and dark modes.
 - Collection count: 20 interactive ideas.
+
+## 2026-09-21 Signal Aliasing card
+
+- Title: `Signal Aliasing`; subtitle: `High frequencies in disguise.`; category: `Signal Processing`.
+- Destination: `https://csprofkgd.github.io/signal-aliasing/`.
+- The user clarified placement: immediately after Taylor Series Approximation and before Global vs. Rolling Shutter, preserving the other cards.
+- Use the supplied black-background cyan/purple wave image, preserved as `signal-aliasing-master.png`, normalized to the shared `1672×625` canvas with square corners and byte-identical light/dark assets.
+- Collection count: 21 interactive ideas.
+- [x] Current change: production build, focused page TypeScript check, diff whitespace check, and ESLint with the pre-existing `react-hooks/set-state-in-effect` rule finding excluded.
+- Full-repository TypeScript retains pre-existing missing Cloudflare Worker types; baseline ESLint has the same theme-initialization finding and image warning. No new failures introduced.
+- [x] Current change: inspected all 21 cards in desktop/mobile light/dark, including individual mobile dark captures, and author card. Compared card width, height, hero height, copy offset and radius at widths 1440, 768, 390, and 844 in both themes; no overflow or browser console/page errors. Verified all 84 public/docs teaser rasters are 1672×625 and the new theme files are byte-identical.
+- [ ] Current change: production verification.

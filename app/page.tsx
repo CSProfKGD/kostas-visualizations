@@ -136,6 +136,13 @@ const visualizations: Visualization[] = [
     href: "https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing",
   },
   {
+    slug: "signal-aliasing",
+    title: "Signal Aliasing",
+    description: "High frequencies in disguise.",
+    category: "Signal Processing",
+    href: "https://csprofkgd.github.io/signal-aliasing/",
+  },
+  {
     slug: "global-vs-rolling-shutter",
     title: "Global vs. Rolling Shutter",
     description: "One Frame. Many Moments.",
@@ -158,7 +165,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260903-eigenfaces";
+const TEASER_ASSET_VERSION = "20260921-signal-aliasing";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -197,7 +204,7 @@ export default function Home() {
         <div className="hero-kicker">A visual learning collection by CSProfKGD</div>
         <h1>#KostasVisualizations</h1>
         <div className="hero-meta" aria-label="Collection summary">
-          <span>20 interactive ideas</span>
+          <span>{visualizations.length} interactive ideas</span>
           <span className="meta-divider" aria-hidden="true" />
           <span>Computer Vision · Machine Learning · Optimization</span>
         </div>
