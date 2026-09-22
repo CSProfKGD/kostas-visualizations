@@ -5,7 +5,7 @@ Updated: 2026-09-22
 ## Production
 
 - Site: https://kostas-visualizations.csprofkgd.chatgpt.site/
-- The current production site is an older deployment. Do not treat its visible teaser images or card sizing as the accepted local state.
+- Sites production includes the 2026-09-22 2D Discrete Fourier Transform card. Compare this record and the local working tree before treating production as authoritative.
 - Publish only after all checks under **Final verification** pass.
 
 ## Authoritative shared card state
@@ -64,7 +64,7 @@ Updated: 2026-09-22
 - [x] Verify all source teaser files have identical dimensions and square raster corners.
 - [x] Do not complete or deploy until every requested change has been visually verified in the rendered page.
 - [x] Verify no browser errors in the validated local build.
-- [ ] Confirm the production replacement assets immediately after deployment.
+- [x] Confirm the production replacement assets immediately after deployment (2026-09-22).
 
 ## 2026-08-28 compact card spacing
 
@@ -128,4 +128,4 @@ Updated: 2026-09-22
 - Collection count: 22 interactive ideas.
 - [x] Production build, focused page TypeScript, ESLint excluding the documented pre-existing theme-effect finding, static asset/reference validation, and diff whitespace checks.
 - [x] Inspected all 22 cards and author card in desktop/mobile light/dark. Matched card width, total/hero height, copy offset and corner radius across 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser console/page errors. All 88 teaser assets match 1672×625; DFT theme files are byte-identical.
-- [ ] Production verification.
+- [x] Published successfully; verified live card text, destination, placement before Fourier Series, and matching SHA-256 hashes for both DFT theme files and both themes of Perspective Projection, Partial Derivatives, Planar Homography, and Epipolar Geometry.
