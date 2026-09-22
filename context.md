@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-09-21
+Updated: 2026-09-22
 
 ## Production
 
@@ -10,7 +10,7 @@ Updated: 2026-09-21
 
 ## Authoritative shared card state
 
-- Twenty-one cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Twenty-two cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -26,8 +26,8 @@ Updated: 2026-09-21
 
 - Steerable Filters: place immediately before `Correlation (aka "Convolution")`. Use title “Steerable Filters,” subtitle “A Few Filters. Infinite Orientations.,” Signal Processing category, and `https://csprofkgd.github.io/steerable-filters/`. Use the user-supplied `steerable_filters_analytic_1672x625.png` at the shared 1672×625 canvas and use the identical raster in light and dark modes.
 - Goldilocks Learning Rates: place directly after “Stuck in a Bad Local Minimum?” and before “Gradient Descent.” Use the hero title “The Goldilocks Principle of Learning Rates,” subtitle “One number. Three very different outcomes.,” Optimization category, and `https://csprofkgd.github.io/goldilocks-learning-rates/`. Use the tightly framed, horizontally outpainted teddy-bear/bowl composition on the shared 1672×625 teaser canvas, with the indigo-purple scene continuing seamlessly to every raster edge and no black side bars; use the identical raster in light and dark modes.
-- 2D Transformations: place immediately before “Fourier Series.” Use title “2D Transformations,” subtitle “Geometry in motion.,” Linear Algebra category, and `https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing`. Use the user-supplied `2D transformations teaser.png`, normalized to the shared 1672×625 canvas and used identically in light and dark modes.
-- Fourier Series: place after “2D Transformations” and before “Taylor Series Approximation.” Use title “Fourier Series,” subtitle “Complicated Shapes. Simple Ingredients.,” Signal Processing category, and `https://drive.google.com/file/d/1wQ2iaEX813kKAGonzwIgRop6bit9Utgk/view?usp=sharing`. Use the user-supplied `Fourier Series.png` on the shared 1672×625 canvas and use the identical raster in light and dark modes.
+- 2D Transformations: place immediately before “2D Discrete Fourier Transform.” Use title “2D Transformations,” subtitle “Geometry in motion.,” Linear Algebra category, and `https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing`. Use the user-supplied `2D transformations teaser.png`, normalized to the shared 1672×625 canvas and used identically in light and dark modes.
+- Fourier Series: place after “2D Discrete Fourier Transform” and before “Taylor Series Approximation.” Use title “Fourier Series,” subtitle “Complicated Shapes. Simple Ingredients.,” Signal Processing category, and `https://drive.google.com/file/d/1wQ2iaEX813kKAGonzwIgRop6bit9Utgk/view?usp=sharing`. Use the user-supplied `Fourier Series.png` on the shared 1672×625 canvas and use the identical raster in light and dark modes.
 - Taylor Series Approximation: after “Fourier Series” and immediately before “Signal Aliasing.” Use title “Taylor Series Approximation,” subtitle “Local Insight. Global Impact.,” Calculus category, and `https://drive.google.com/file/d/1BNJAcvfXrMaTG_1M5yJ4OVxMfasgMo_T/view?usp=sharing`. Preserve the user-supplied `taylor_series_fx_label_raised_1696x624.png` as the master, normalize it to the shared 1672×625 canvas, and use the identical raster in light and dark modes.
 - Perspective Projection: use the user-supplied `/Users/kosta/Downloads/PP_black.png`, normalized to the shared 1672×625 teaser canvas and used identically in light and dark modes.
 - Sphere to Cubemap and Sphere to Equirectangular Projection: use the outpainted compositions with black background at every raster edge and modest breathing room around the complete globe and mapping diagram. Preserve every legitimate cyan latitude/longitude arc and every cyan cubemap/ERP segment outline. Remove the orange/coral vertical meridian and all associated glow from both representations.
@@ -117,4 +117,15 @@ Updated: 2026-09-21
 - [x] Current change: production build, focused page TypeScript check, diff whitespace check, and ESLint with the pre-existing `react-hooks/set-state-in-effect` rule finding excluded.
 - Full-repository TypeScript retains pre-existing missing Cloudflare Worker types; baseline ESLint has the same theme-initialization finding and image warning. No new failures introduced.
 - [x] Current change: inspected all 21 cards in desktop/mobile light/dark, including individual mobile dark captures, and author card. Compared card width, height, hero height, copy offset and radius at widths 1440, 768, 390, and 844 in both themes; no overflow or browser console/page errors. Verified all 84 public/docs teaser rasters are 1672×625 and the new theme files are byte-identical.
-- [ ] Current change: production verification.
+- [x] Current change: Sites version 32 published successfully; inspected the live Signal Aliasing card immediately after Taylor, confirmed both live teaser files load at 1672×625, and confirmed the preserved geometry replacement assets are live.
+
+## 2026-09-22 2D Discrete Fourier Transform card
+
+- Title: `2D Discrete Fourier Transform`; subtitle: `One image. Two representations.`; category: `Signal Processing`.
+- Place immediately before Fourier Series and after 2D Transformations.
+- Destination: `https://csprofkgd.github.io/discrete-fourier-transform/` (the supplied Markdown link destination).
+- Preserve the supplied Toronto city / Fourier spectrum artwork as `discrete-fourier-transform-master.png`; normalize to the shared square-cornered `1672×625` canvas and use byte-identical light/dark assets.
+- Collection count: 22 interactive ideas.
+- [x] Production build, focused page TypeScript, ESLint excluding the documented pre-existing theme-effect finding, static asset/reference validation, and diff whitespace checks.
+- [x] Inspected all 22 cards and author card in desktop/mobile light/dark. Matched card width, total/hero height, copy offset and corner radius across 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser console/page errors. All 88 teaser assets match 1672×625; DFT theme files are byte-identical.
+- [ ] Production verification.

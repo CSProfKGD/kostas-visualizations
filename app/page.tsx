@@ -122,6 +122,13 @@ const visualizations: Visualization[] = [
     href: "https://drive.google.com/file/d/1UOIV_mkT-X_syESycezc6ibneYpDvGXa/view?usp=sharing",
   },
   {
+    slug: "discrete-fourier-transform",
+    title: "2D Discrete Fourier Transform",
+    description: "One image. Two representations.",
+    category: "Signal Processing",
+    href: "https://csprofkgd.github.io/discrete-fourier-transform/",
+  },
+  {
     slug: "fourier-series",
     title: "Fourier Series",
     description: "Complicated Shapes. Simple Ingredients.",
@@ -165,7 +172,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260921-signal-aliasing";
+const TEASER_ASSET_VERSION = "20260922-discrete-fourier-transform";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
