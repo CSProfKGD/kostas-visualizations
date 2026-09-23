@@ -5,7 +5,7 @@ Updated: 2026-09-22
 ## Production
 
 - Site: https://kostas-visualizations.csprofkgd.chatgpt.site/
-- Sites production includes the 2026-09-22 2D Discrete Fourier Transform card. Compare this record and the local working tree before treating production as authoritative.
+- Sites production includes the Video as a Spacetime Volume card. Compare this record and the local working tree before treating production as authoritative.
 - Publish only after all checks under **Final verification** pass.
 
 ## Authoritative shared card state
@@ -139,5 +139,5 @@ Updated: 2026-09-22
 - Collection count: 23 interactive ideas.
 - [x] Spacetime: production build, focused TypeScript, ESLint excluding the documented pre-existing theme-effect finding, static references and whitespace checks.
 - [x] Spacetime: visually inspected all 23 cards and author card in desktop/mobile light/dark. Equal geometry at 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser errors. All 92 public/docs teaser files are 1672×625 and new light/dark files are byte-identical.
-- [ ] Spacetime: Sites production verification.
+- [x] Spacetime: Sites production verified, including exact card text, destination, order after Epipolar Geometry and matching hashes of both new teaser files plus both themes of all four preserved geometry assets.
 - Push to GitHub and verify the public Pages content after deployment before reporting completion.
