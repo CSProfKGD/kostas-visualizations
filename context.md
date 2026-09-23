@@ -10,7 +10,7 @@ Updated: 2026-09-22
 
 ## Authoritative shared card state
 
-- Twenty-two cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Twenty-three cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -129,3 +129,15 @@ Updated: 2026-09-22
 - [x] Production build, focused page TypeScript, ESLint excluding the documented pre-existing theme-effect finding, static asset/reference validation, and diff whitespace checks.
 - [x] Inspected all 22 cards and author card in desktop/mobile light/dark. Matched card width, total/hero height, copy offset and corner radius across 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser console/page errors. All 88 teaser assets match 1672×625; DFT theme files are byte-identical.
 - [x] Published successfully; verified live card text, destination, placement before Fourier Series, and matching SHA-256 hashes for both DFT theme files and both themes of Perspective Projection, Partial Derivatives, Planar Homography, and Epipolar Geometry.
+
+## 2026-09-22 Video as a Spacetime Volume card
+
+- Title: `Video as a Spacetime Volume`; subtitle: `Where space meets time.`; category: `Computational Photography`.
+- Place immediately after Epipolar Geometry and before Planar Homography.
+- Destination: `https://csprofkgd.github.io/spacetime-volume/`.
+- Preserve the supplied Toronto video volume with XY, XT and YT slices as `spacetime-volume-master.png`; normalize to the shared square-cornered `1672×625` canvas and use byte-identical light/dark assets.
+- Collection count: 23 interactive ideas.
+- [x] Spacetime: production build, focused TypeScript, ESLint excluding the documented pre-existing theme-effect finding, static references and whitespace checks.
+- [x] Spacetime: visually inspected all 23 cards and author card in desktop/mobile light/dark. Equal geometry at 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser errors. All 92 public/docs teaser files are 1672×625 and new light/dark files are byte-identical.
+- [ ] Spacetime: Sites production verification.
+- Push to GitHub and verify the public Pages content after deployment before reporting completion.

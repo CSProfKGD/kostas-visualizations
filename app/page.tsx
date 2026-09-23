@@ -87,6 +87,13 @@ const visualizations: Visualization[] = [
     href: "https://csprofkgd.github.io/epipolar-geometry-visualization/",
   },
   {
+    slug: "spacetime-volume",
+    title: "Video as a Spacetime Volume",
+    description: "Where space meets time.",
+    category: "Computational Photography",
+    href: "https://csprofkgd.github.io/spacetime-volume/",
+  },
+  {
     slug: "planar-homography",
     title: "Planar Homography",
     description: "Plane-to-plane projective mapping.",
@@ -172,7 +179,7 @@ const visualizations: Visualization[] = [
   },
 ];
 
-const TEASER_ASSET_VERSION = "20260922-discrete-fourier-transform";
+const TEASER_ASSET_VERSION = "20260922-spacetime-volume";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
