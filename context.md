@@ -5,7 +5,7 @@ Updated: 2026-11-07
 ## Production
 
 - Site: https://kostas-visualizations.csprofkgd.chatgpt.site/
-- Sites production includes the Video as a Spacetime Volume card. Compare this record and the local working tree before treating production as authoritative.
+- Sites production includes Hough Transform as the final card. Compare this record and the local working tree before treating production as authoritative.
 - Publish only after all checks under **Final verification** pass.
 
 ## Authoritative shared card state
@@ -150,5 +150,5 @@ Updated: 2026-11-07
 - Collection count: 24 interactive ideas.
 - [x] Hough: production build, focused TypeScript, ESLint excluding documented pre-existing theme-effect finding, asset/reference checks, and diff whitespace validation. All 96 public/docs teaser files are 1672×625; new theme files are byte-identical.
 - [x] Hough: inspected all 24 cards and author card in desktop/mobile light/dark. Matching card width, total height, hero height, copy offset and radius at 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser errors.
-- [ ] Hough: Sites production verification.
+- [x] Hough: verified live last-card placement, exact title/subtitle/link and byte-for-byte matches for both Hough teasers plus both themes of Perspective Projection, Partial Derivatives, Planar Homography and Epipolar Geometry.
 - Commit/push to GitHub and verify Pages deployment before reporting completion.
