@@ -1,6 +1,6 @@
 # Kosta's Visualizations — Current State
 
-Updated: 2026-09-22
+Updated: 2026-11-07
 
 ## Production
 
@@ -10,7 +10,7 @@ Updated: 2026-09-22
 
 ## Authoritative shared card state
 
-- Twenty-three cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
+- Twenty-four cards in a three-column desktop grid, two-column tablet grid, and one-column mobile grid.
 - Every card uses the same outer radius, width, total height, hero height, and copy height at a given breakpoint.
 - All cards must have exactly the same dimensions at a given breakpoint, and all four outer corners must use exactly the same shape/radius.
 - The outer `.visualization-card` is the only rounded clipping boundary.
@@ -141,3 +141,14 @@ Updated: 2026-09-22
 - [x] Spacetime: visually inspected all 23 cards and author card in desktop/mobile light/dark. Equal geometry at 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser errors. All 92 public/docs teaser files are 1672×625 and new light/dark files are byte-identical.
 - [x] Spacetime: Sites production verified, including exact card text, destination, order after Epipolar Geometry and matching hashes of both new teaser files plus both themes of all four preserved geometry assets.
 - Push to GitHub and verify the public Pages content after deployment before reporting completion.
+
+## 2026-11-07 Hough Transform card
+
+- Final card, after Eigenfaces: `Hough Transform` / `The wisdom of the crowd`.
+- Category: `Computer Vision`; destination: `https://csprofkgd.github.io/hough-transform/`.
+- Preserve the supplied line/voting-space artwork as `hough-transform-master.png`; normalize to the shared `1672×625` square-cornered canvas, byte-identical in both themes.
+- Collection count: 24 interactive ideas.
+- [x] Hough: production build, focused TypeScript, ESLint excluding documented pre-existing theme-effect finding, asset/reference checks, and diff whitespace validation. All 96 public/docs teaser files are 1672×625; new theme files are byte-identical.
+- [x] Hough: inspected all 24 cards and author card in desktop/mobile light/dark. Matching card width, total height, hero height, copy offset and radius at 1440×900, 768×1024, 390×844 and 844×390; no overflow or browser errors.
+- [ ] Hough: Sites production verification.
+- Commit/push to GitHub and verify Pages deployment before reporting completion.

@@ -177,9 +177,16 @@ const visualizations: Visualization[] = [
     category: "Linear Algebra",
     href: "https://csprofkgd.github.io/eigenfaces-linear-carousel/",
   },
+  {
+    slug: "hough-transform",
+    title: "Hough Transform",
+    description: "The wisdom of the crowd",
+    category: "Computer Vision",
+    href: "https://csprofkgd.github.io/hough-transform/",
+  },
 ];
 
-const TEASER_ASSET_VERSION = "20260922-spacetime-volume";
+const TEASER_ASSET_VERSION = "20261107-hough-transform";
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("dark");
